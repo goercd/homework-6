@@ -1,68 +1,32 @@
-﻿(function(){
 
+//задание1
+
+ var arr = [1, 7, 4, 77, 73];
  
-    function recursion() {        
-        const child = document.getElementById('ChildBlock');  
-        const hypnoticToad = document.querySelector('.hypnoticToad');
-          
  
-
-		
-        function catchParent(el) {   
-            drawGreen(el);             
-            const parent = el.parentNode;
-            const id = parent.getAttribute('id')                 
-            if(!id) {
-                setTimeout(() => {
-                    drawGreen(parent);
-                    catchParent(parent)
-                }, 300);        
-            } else {
-                decorateChildren(parent);
-                drawGreen(parent)                      
-            };
-        }
-
-
-		
-        function decorateChildren(el) {         
-            const child = filterChild(el)[0];                   
-            
-            if(count === attempt) {
-                hypnoticToad.appendChild(img);
-                return;
-            } 
-
-            if(child) {
-                setTimeout(() => {
-                    drawBlack(child);                
-                    decorateChildren(child);
-                }, 300)            
-            } else {            
-                count++;        
-                setTimeout(() => {
-                    drawBlack(el);
-                    catchParent(el);
-                }, 300)                        
-            }
-        }
-        
-   
-    
-	console.log(document.querySelector('deepChild')); 
-	
-	
-		console.log(document.querySelector('sibling first')); 
-		for(let i = 0; i < 100; i++) {
-            div.style.margins = 'red';
-          }
-		
-		console.log(document.querySelector('sibling second')); 
-		for(let i = 0; i < 100; i++) {
-             div.style.margins = 'green';            
-		}
-		
-		console.log(document.querySelector('deepChild'));
-	
-	
+    function getSevenCol(arr) {        
+    let res = [];
+     var count = 0;
+            for(let i=0; i<7; i++)
+                if (this[i]==7)
+                    count++;
+            return count;
     }
+}
+
+
+
+//задание2
+
+
+
+ var arr = ["a", "b", "c", "d", "e", "f"];
+ 
+  function arrToStr(arr) {     
+  
+var arr2 = arr.slice(0; 5; 1; 4; 2; 3);
+ 
+alert( arr2 );
+    }
+}
+
